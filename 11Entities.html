@@ -1,0 +1,34 @@
+ <!-- An entity is a piece of text (“string”) that begins with an ‘&’ and ends with a ‘;’. These are frequently used to display reserved characters, and invisible characters
+
+ HTML treats all the extra spaces as a single space only and automatically removes all of them. Therefore, if you want to use extra spaces or any special characters, then you have to use HTML entities. To get extra space we can use &nbsp (non-breaking space) after that particular text.
+
+ By adding five &nbsp, we can get 5 extra spaces. However, I do not recommend using this method because it looks unprofessional. We will learn to create extra spaces in CSS with the help of margin, padding, or selectors that looks more professional. 
+
+ Entities are also used to write some special characters that you cannot write from keyboards and also those words that are reserved in HTML. For example, if we want <p> to appear in the result, then it is not possible without the help of entities. 
+ We have to write in this format-
+      <div class= “container”>
+              <p>This is another Paragraph &lt;p&gt; </p>
+      </div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Entities</title>
+</head>
+<body>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+    <div class="container">
+        <p>This is another  &nbsp&nbsp&nbsp&nbsp   paragraph with four spaces</p>
+        <p>Paragraph is written like this  &lt;p&gt;  </p>
+        <p>Pound is written like this &pound; </p>
+        <p>Copyright is written like this &copy;</p>
+        <p>Another character is &reg; </p>
+        <p>Another character is O&#769;&nbsp&nbsp  &lt;p&gt; </p>
+    </div>
+</body>
+</html>
